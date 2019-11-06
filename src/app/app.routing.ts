@@ -44,9 +44,10 @@ export const routes: Routes = [
       title: 'Register Page'
     }
   },
+
   {
     path: '',
-    // canActivate: [AuthGuard],
+    canActivate: [AuthGuard],
     component: DefaultLayoutComponent,
     data: {
       title: 'Home'
